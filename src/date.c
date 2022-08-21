@@ -445,8 +445,8 @@ main (int argc, char **argv)
             static char const rfc_3339_format[][32] =
               {
                 "%Y-%m-%d",
-                "%Y-%m-%d %H:%M:%S%:z",
-                "%Y-%m-%d %H:%M:%S.%N%:z"
+                "%Y-%m-%dT%H:%M:%S%:z",
+                "%Y-%m-%dT%H:%M:%S.%N%:z"
               };
             enum Time_spec i =
               XARGMATCH ("--rfc-3339", optarg,
